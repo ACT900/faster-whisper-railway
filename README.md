@@ -40,8 +40,9 @@ Ideal for: medical recordings, legal conversations, financial meetings, and anyt
 ## How It Works
 
 1. **Click Deploy** — one click, everything is pre-configured
-2. **Open your URL** — a web interface loads in your browser
-3. **Upload and transcribe** — drag and drop any audio file
+2. **Open your URL** — a login page guides you to your API key
+3. **Sign in** — paste your key from the Railway Variables tab
+4. **Upload and transcribe** — drag and drop any audio file
 
 No coding required.
 
@@ -91,27 +92,32 @@ Railway Hobby plan required ($5/mo + usage). New users get a free trial. [See pr
 
 ### Step 1: Deploy
 
-Click **Deploy on Railway** above. Review the pre-configured settings (defaults work out of the box) and click **Deploy**. The first deploy downloads the AI model (~75 MB) and takes about 1-2 minutes.
+Click **Deploy on Railway** above. Review the pre-configured settings (defaults work out of the box) and click **Deploy**. The first deploy downloads the AI model (~466 MB for the default `small` model) and takes about 1-2 minutes.
 
-### Step 2: Find Your URL and API Key
+### Step 2: Open Your URL
 
 Once deployed, go to your Railway project:
 
 1. Click on the **Faster Whisper** service
 2. Go to the **Settings** tab > **Networking** > find your **Public Domain** (e.g., `faster-whisper-production-xxxx.up.railway.app`)
-3. Go to the **Variables** tab > find **API_KEY** — this is your authentication key
+3. Open the URL in your browser
 
-### Step 3: Use the Web UI
+### Step 3: Sign In
 
-Open your public domain URL in a browser. You'll see the Gradio web interface where you can:
+You'll see a login page that guides you to your API key:
 
-1. Upload an audio file (drag and drop or click to browse)
-2. Click **Transcribe**
-3. See the text result instantly
+1. Go to your Railway dashboard and click the **Faster Whisper** service
+2. Go to the **Variables** tab > find **API_KEY**
+3. Copy the key and paste it into the login page
+4. Click **Sign in** — you're in!
 
-The web UI is the easiest way to start transcribing immediately. No code required.
+Your key is saved in your browser, so you only need to do this once.
 
-### Step 4: Use the API
+### Step 4: Transcribe
+
+Upload an audio file (drag and drop or click to browse), click **Transcribe**, and see the text result instantly. No code required.
+
+### Step 5: Use the API (Optional)
 
 For programmatic access, use the API with your domain and API key:
 
