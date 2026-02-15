@@ -1765,7 +1765,7 @@ transcribeBtn.addEventListener('click', function() {
 
   var formData = new FormData();
   formData.append('file', selectedFile);
-  formData.append('model', 'Systran/faster-whisper-small');
+  formData.append('model', 'Systran/faster-whisper-base');
   if (lang) formData.append('language', lang);
   formData.append('response_format', format);
 
